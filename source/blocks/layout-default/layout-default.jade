@@ -1,5 +1,6 @@
 include ../main-header/main-header.jade
 include ../main-footer/main-footer.jade
+include ../main-content/main-content.jade
 
 doctype html
 html(lang='ru')
@@ -7,7 +8,7 @@ html(lang='ru')
 		include ../head/head.jade
 
 		+main-header
-
-		block content
+		+main-content
+			//- block content
 
 		+main-footer
