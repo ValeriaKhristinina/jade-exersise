@@ -1,7 +1,7 @@
 mixin tab(id, name)
-	label(for=id)= name
+	label(for=id)&attributes(attributes)= name
 	section.tab
-		input(id=id type="radio" name="toggle")
+		input(id=id type="radio" name="toggle" checked=attributes.checked)
 		.tab__content
 			p.tab__description
 				block
