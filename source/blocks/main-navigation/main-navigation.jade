@@ -1,8 +1,9 @@
-mixin main-navigation
+include ../../elements/list-item/list-item.jade
+include ../../elements/link/link.jade
+
+mixin main-navigation()
 
 	nav.main-navigation
 		ul.main-navigation__list
-			li.main-navigation__item
-				a(href='index.html') Home
-				li.main-navigation__item
-					a(href='login.html') Login
+			+list-item("index.html", "Home")
+			+list-item("login.html", "Login")
