@@ -6,9 +6,12 @@
 	display: none
 	height 200px
 	border: 2px solid clr-grey
-	// border-radius: brdr-radius
+	border-top: none
+	border-bottom: none
 	overflow: overlay
 
+.tab:last-child
+	border-bottom: 2px solid clr-grey
 
 .tab__description
 	padding: 10px
@@ -27,3 +30,12 @@
 	position: absolute
 	top: 0
 	opacity: 0
+
+.tab__title
+	display: block;
+	padding: 5px 10px
+	background-color: #90BDD4
+	border: 1px solid clr-black
+
+.tab__title:hover
+	background-color: rgba(144, 189, 212, 0.5)

@@ -1,6 +1,6 @@
 mixin tab(id, name)
-	label(for=id)&attributes(attributes)= name
-	section.tab
+	label.tab__title(for=id)&attributes(attributes)= name
+	article.tab
 		input(id=id type="radio" name="toggle" checked=attributes.checked)
 		.tab__content
 			p.tab__description
